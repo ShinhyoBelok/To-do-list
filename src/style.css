@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 1.3rem;
+  font-family: 'Inconsolata', monospace;
+  font-weight: 300;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.listContainer {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
+  width: 75vw;
+}
+
+.lineStyle {
+  box-sizing: border-box;
+  padding: 15px;
+  border-bottom: 1.5px solid lightgray;
+}
+
+.clear {
+  border-bottom: unset !important;
+  display: flex;
+  background-color: #f6f6f6;
+}
+
+.clear button {
+  border: unset;
+  background-color: unset;
+  align-self: center;
+  justify-content: center;
+  width: 100%;
+  color: #7b7b7b;
+}
+.input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.input input{
+  border: unset;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+input[type='checkbox'] {
+  position: relative;
+  top: 0;
+  height: 15px;
+  width: 15px;
+  outline: unset;
+  appearance: none;
+}
+
+input[type='checkbox']::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border: 3px solid lightgray;
+  border-radius: 2px;
+  transition: 0.5s;
+}
+
+input:checked[type='checkbox']::before {
+  border-left: none;
+  border-top: none;
+  width: 7.5px;
+  border-color: #2e8ae6;
+  transform: rotate(45deg) translate(3.5px, -5px);
+  transition: 0.5s;
+}
+
+.verticalDots {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-self: center;
+  justify-self: end;
+}
+
+.dot {
+  width: 5px;
+  height: 5px;
+  background-color: rgb(38, 192, 243);
+  border-radius: 50%;
+}
+
+.listElement {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.lineThrough {
+  text-decoration:line-through;
+  color: #8c8c8c;
+}
+
+.arrow-ccw {
+  background-color: rgb(38, 192, 243);
+  -webkit-mask: url(./icons/arrows-ccw.svg) no-repeat center;
+  mask: url(./icons/arrows-ccw.svg) no-repeat center;
+  width: 15px;
+  height: 15px;
+}
+
+.headerList {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.enter {
+  background-color: rgb(38, 192, 243);
+  -webkit-mask: url(./icons/enter.svg) no-repeat center;
+  mask: url(./icons/enter.svg) no-repeat center;
+  width: 15px;
+  height: 15px;
+  z-index: 10;
+}
