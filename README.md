@@ -108,7 +108,8 @@ Clone this repository to your desired folder:
 
 To run the project, execute the following command:
 
-- Go to the dist forlder.
+- Go to the docs forlder.
+- Rename the dir docs to dist.
 - Open index.html.
 - Run in a browser or with liveServer Extension.
 
