@@ -125,43 +125,9 @@ In order to modificate the project you have to install webpack and css loader:
 [Optional] To make it easy to work with the code.
 - npm install --save-dev webpack-dev-server
 - create webpack.config.js in the root with the following code:
-`
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-module.exports = {
-  mode: 'development',
-  entry: {
-    bundle: path.resolve(__dirname, 'src/index.js'),
-  },
-  output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js',
-    clean: true,
-  },
-  devServer: {
-    static: {
-      directory: path.resolve(__dirname, 'dist'),
-    },
-    port: 3000,
-    open: true,
-    hot: true,
-  },
-  module: {
-    rules: [
-      {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
-      },
-    ],
-  },
-  plugins: [
-    new HtmlWebpackPlugin({
-      filename: 'index.html',
-      template: 'src/template.html',
-    }),
-  ],
-}
-`
+
+![image](https://user-images.githubusercontent.com/114300121/206221506-d6b3b733-6523-4721-9933-37bd2f74da4d.png)
+
 ### Deployment
 
 You can deploy this project using:
@@ -224,7 +190,5 @@ Give a ⭐️ if you like this project!
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
