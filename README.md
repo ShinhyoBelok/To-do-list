@@ -55,15 +55,15 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Awesome-book-ES6 <a name="about-project"></a>
+# 📖 To do taks <a name="about-project"></a>
 
-**Awesome-book-ES6** is a website that allows you to create a collection of your favorites books.
+**To do taks** is a website that allows you to create a collection of your favorites books.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 - HTML and JavaScript
 - Git, Github and Visual Studio Code
-- webpack
+- Webpack
 
 <!-- Features -->
 
@@ -78,7 +78,7 @@ After you're finished please remove all the comments and instructions!
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-[You can see our live demo](https://shinhyobelok.github.io/awesomeBook-ES6/)
+[You can see our live demo](https://shinhyobelok.github.io/To-do-list/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -99,41 +99,79 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 
-- Choose a directory
-- Open a Terminal
-- write: git clone [here](https://github.com/ShinhyoBelok/awesomeBook-ES6.git)
-
-### Install
-
-Install this project with:
-
-- get into to directory "awesomeBook-ES6"
-- write: npm install
+- Choose a local directory.
+- Open a Git Terminal.
+- write: git clone https://github.com/ShinhyoBelok/To-do-list.git
+- Open the repository with VS Code.
 
 ### Usage
 
 To run the project, execute the following command:
 
-- In gitbash terminal
-- write: code .
+- Go to the dist forlder.
+- Open index.html.
+- Run in a browser or with liveServer Extension.
 
+## Install
+
+In order to modificate the project you have to install webpack and css loader:
+
+- npm init -y
+- npm install webpack webpack-cli --save-dev
+- npm install --save-dev html-webpack-plugin
+- npm install --save-dev style-loader css-loader
+
+[Optional] To make it easy to work with the code.
+- npm install --save-dev webpack-dev-server
+- create webpack.config.js in the root with the following code:
+`
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+module.exports = {
+  mode: 'development',
+  entry: {
+    bundle: path.resolve(__dirname, 'src/index.js'),
+  },
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'bundle.js',
+    clean: true,
+  },
+  devServer: {
+    static: {
+      directory: path.resolve(__dirname, 'dist'),
+    },
+    port: 3000,
+    open: true,
+    hot: true,
+  },
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+      },
+    ],
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      filename: 'index.html',
+      template: 'src/template.html',
+    }),
+  ],
+}
+`
 ### Deployment
 
 You can deploy this project using:
 
-[Deploy](https://shinhyobelok.github.io/awesomeBook-ES6/)
+[Deploy](https://shinhyobelok.github.io/To-do-list/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
-
-👤 **MIRNA**
-
-- GitHub: [@M1rn4](https://github.com/M1rn4)
-- Twitter: [Mirna_Ampuero](https://twitter.com/_AmpueroMirna)
-- LinkedIn: [Mirna](https://www.linkedin.com/in/mirna-ampuero-caro/)
 
 👤 **Shinhyo**
 
