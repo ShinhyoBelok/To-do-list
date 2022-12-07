@@ -1,4 +1,4 @@
-let toDoListContainer = document.querySelector('.toDoListContainer');
+const toDoListContainer = document.querySelector('.toDoListContainer');
 
 const displayList = (array) => {
   array.innerHTML = '';
@@ -23,10 +23,10 @@ const displayList = (array) => {
         </article>
       `;
       toDoListContainer.innerHTML += listTemplate;
-      counter++;
+      counter += 1;
     }
-    i++;
+    i += 1;
   }
-}
+};
 
 export default displayList;

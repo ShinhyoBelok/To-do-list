@@ -1,6 +1,7 @@
 import './style.css';
 import displayList from './Jsmodules/displayList.js';
-let toDoTask = [
+
+const toDoTask = [
   {
     description: 'Finish this project',
     completed: false,

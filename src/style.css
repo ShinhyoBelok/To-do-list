@@ -42,13 +42,14 @@ body {
   width: 100%;
   color: #7b7b7b;
 }
+
 .input {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.input input{
+.input input {
   border: unset;
 }
 
@@ -112,7 +113,7 @@ input:checked[type='checkbox']::before {
 }
 
 .lineThrough {
-  text-decoration:line-through;
+  text-decoration: line-through;
   color: #8c8c8c;
 }
 
