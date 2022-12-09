@@ -98,7 +98,6 @@ In order to modificate the project you have to install webpack and css loader:
 - npm install --save-dev style-loader css-loader
 - npm install --save-dev webpack-dev-server
 
-
 ### Deployment
 
 You can deploy this project using:
