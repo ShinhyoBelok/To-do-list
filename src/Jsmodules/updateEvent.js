@@ -5,7 +5,7 @@ const updateEvent = () => {
   const description = document.querySelectorAll('p');
   const checkbox = document.querySelectorAll('.checkbox');
   checkbox.forEach((box) => {
-    box.addEventListener('click', (event) => {
+    box.addEventListener('change', (event) => {
       const { id } = event.target.parentNode.parentNode;
       completed(id);
     });

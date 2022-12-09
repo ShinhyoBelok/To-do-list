@@ -1,31 +1,6 @@
 <a name="readme-top"></a>
 
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
-
-Modify this file to match your project and remove sections that don't apply.
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
-After you're finished please remove all the comments and instructions!
--->
-
 <div align="center">
-
-  <!-- <img src="./readmeFiles/murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/> -->
 
   <h3><b>Microverse README</b></h3>
 
@@ -121,12 +96,7 @@ In order to modificate the project you have to install webpack and css loader:
 - npm install webpack webpack-cli --save-dev
 - npm install --save-dev html-webpack-plugin
 - npm install --save-dev style-loader css-loader
-
-[Optional] To make it easy to work with the code.
 - npm install --save-dev webpack-dev-server
-- create webpack.config.js in the root with the following code:
-
-![image](https://user-images.githubusercontent.com/114300121/206221506-d6b3b733-6523-4721-9933-37bd2f74da4d.png)
 
 ### Deployment
 

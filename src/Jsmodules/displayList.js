@@ -20,7 +20,7 @@ const displayList = (array) => {
       const listTemplate = `
         <article class="list lineStyle" id="${counter}">
           <div class="elementList">
-            <span class="checkbox ${completedStyle.box}"></span>
+            <input type="checkbox" class="checkbox" ${completedStyle.box}>
             <p class="description ${completedStyle.line}" contenteditable="true">${array[i].description}</p>
           </div>
           <img class="trashCan">
