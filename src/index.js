@@ -1,31 +1,20 @@
 import './style.css';
-import displayList from './Jsmodules/displayList.js';
+import { add, clearAllCompleted } from './Jsmodules/Features.js';
 
-const toDoTask = [
-  {
-    description: 'Finish this project',
-    completed: false,
-    index: 2,
-  },
-  {
-    description: 'Get some sleep',
-    completed: false,
-    index: 1,
-  },
-  {
-    description: 'Ya tengo que terminar',
-    completed: false,
-    index: 3,
-  },
-];
+const addBtn = document.querySelector('.enter');
+const clearAllCompletedBtn = document.querySelector('.clearBtn');
+const listTitle = document.querySelector('.listTitle');
 
-displayList(toDoTask);
+addBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  add();
+});
 
-const checkbox = document.querySelectorAll('.checkbox');
-const descriptionP = document.querySelectorAll('p');
+clearAllCompletedBtn.addEventListener('click', () => {
+  clearAllCompleted();
+});
 
-checkbox.forEach((box) => {
-  box.addEventListener('click', (event) => {
-    descriptionP[event.target.id - 1].classList.toggle('lineThrough');
-  });
+listTitle.addEventListener('blur', (event) => {
+  const text = event.target.textContent;
+  localStorage.setItem('listTitle', text);
 });
