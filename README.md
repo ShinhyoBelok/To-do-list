@@ -32,7 +32,7 @@
 
 # 📖 To do taks <a name="about-project"></a>
 
-**To do taks** is a website that allows you to create a collection of your favorites books.
+**To do taks** is a website that allows you to create a list of task that you want to save online.
 
 ## 🛠 Built With <a name="built-with"></a>
 
