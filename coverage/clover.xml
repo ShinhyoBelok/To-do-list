@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1671053088941" clover="3.2.0">
-  <project timestamp="1671053088941" name="All files">
+<coverage generated="1671053475447" clover="3.2.0">
+  <project timestamp="1671053475447" name="All files">
     <metrics statements="81" coveredstatements="52" conditionals="14" coveredconditionals="4" methods="19" coveredmethods="10" elements="114" coveredelements="66" complexity="0" loc="81" ncloc="81" packages="1" files="4" classes="4"/>
-    <file name="Features.js" path="/home/dgcuenca/Microverse/Proyects/Shinhyo/To-do-list/src/Jsmodules/Features.js">
+    <file name="Features.js" path="G:\Program files code\Microverse\Module 2\To-do-list\src\Jsmodules\Features.js">
       <metrics statements="34" coveredstatements="19" conditionals="6" coveredconditionals="1" methods="8" coveredmethods="3"/>
       <line num="4" count="1" type="stmt"/>
       <line num="5" count="1" type="stmt"/>
@@ -39,13 +39,13 @@
       <line num="50" count="0" type="stmt"/>
       <line num="60" count="1" type="stmt"/>
     </file>
-    <file name="Task.js" path="/home/dgcuenca/Microverse/Proyects/Shinhyo/To-do-list/src/Jsmodules/Task.js">
+    <file name="Task.js" path="G:\Program files code\Microverse\Module 2\To-do-list\src\Jsmodules\Task.js">
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <line num="3" count="3" type="stmt"/>
       <line num="4" count="3" type="stmt"/>
       <line num="5" count="3" type="stmt"/>
     </file>
-    <file name="displayList.js" path="/home/dgcuenca/Microverse/Proyects/Shinhyo/To-do-list/src/Jsmodules/displayList.js">
+    <file name="displayList.js" path="G:\Program files code\Microverse\Module 2\To-do-list\src\Jsmodules\displayList.js">
       <metrics statements="19" coveredstatements="17" conditionals="6" coveredconditionals="3" methods="1" coveredmethods="1"/>
       <line num="3" count="1" type="stmt"/>
       <line num="4" count="6" type="stmt"/>
@@ -67,7 +67,7 @@
       <line num="37" count="9" type="stmt"/>
       <line num="39" count="6" type="stmt"/>
     </file>
-    <file name="updateEvent.js" path="/home/dgcuenca/Microverse/Proyects/Shinhyo/To-do-list/src/Jsmodules/updateEvent.js">
+    <file name="updateEvent.js" path="G:\Program files code\Microverse\Module 2\To-do-list\src\Jsmodules\updateEvent.js">
       <metrics statements="25" coveredstatements="13" conditionals="2" coveredconditionals="0" methods="9" coveredmethods="5"/>
       <line num="3" count="1" type="stmt"/>
       <line num="5" count="6" type="stmt"/>

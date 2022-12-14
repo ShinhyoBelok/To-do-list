@@ -20,8 +20,6 @@ listTitle.addEventListener('blur', (event) => {
   localStorage.setItem('listTitle', text);
 });
 
-console.log(reloadIcon);
 reloadIcon.addEventListener('click', () => {
   reloadIcon.classList.toggle('reload');
-  displayList(listOfTasks);
 });

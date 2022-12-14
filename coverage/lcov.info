@@ -1,5 +1,5 @@
 TN:
-SF:src/Jsmodules/Features.js
+SF:src\Jsmodules\Features.js
 FN:5,(anonymous_0)
 FN:14,(anonymous_1)
 FN:16,(anonymous_2)
@@ -64,7 +64,7 @@ BRF:6
 BRH:1
 end_of_record
 TN:
-SF:src/Jsmodules/Task.js
+SF:src\Jsmodules\Task.js
 FN:2,(anonymous_0)
 FNF:1
 FNH:1
@@ -78,7 +78,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:src/Jsmodules/displayList.js
+SF:src\Jsmodules\displayList.js
 FN:3,(anonymous_0)
 FNF:1
 FNH:1
@@ -114,7 +114,7 @@ BRF:6
 BRH:3
 end_of_record
 TN:
-SF:src/Jsmodules/updateEvent.js
+SF:src\Jsmodules\updateEvent.js
 FN:3,(anonymous_0)
 FN:7,(anonymous_1)
 FN:8,(anonymous_2)

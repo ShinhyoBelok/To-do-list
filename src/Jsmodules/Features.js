@@ -50,14 +50,7 @@ window.addEventListener('load', () => {
   displayList(listOfTasks);
 });
 
-// const reloadIcon = document.querySelector('.arrow-ccw');
-// console.log(reloadIcon);
-// reloadIcon.addEventListener('click', () => {
-//   reloadIcon.classList.toggle('reload');
-//   displayList(listOfTasks);
-// });
-
 module.exports = {
   add,
   remove,
-}
+};
