@@ -1,7 +1,7 @@
 import updateEvent from './updateEvent';/* eslint-disable-line */
 
-const toDoListContainer = document.querySelector('.toDoListContainer');
 const displayList = (array) => {
+  const toDoListContainer = document.querySelector('.toDoListContainer');
   localStorage.setItem('listOfTasks', JSON.stringify(array));
   toDoListContainer.innerHTML = '';
   let completedStyle = { line: '', box: '' };
