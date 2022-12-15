@@ -59,4 +59,5 @@ module.exports = {
   remove,
   editElement,
   clearAllCompleted,
+  completed,
 };

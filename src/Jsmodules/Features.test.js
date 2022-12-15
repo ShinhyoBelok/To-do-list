@@ -2,7 +2,7 @@
 * @jest-environment jsdom
 */
 
-import { add, remove, editElement, clearAllCompleted } from './Features.js';
+import { add, remove, editElement, clearAllCompleted, completed } from './Features.js';
 
 document.body.innerHTML = `
 <div class="listContainer">
@@ -80,5 +80,20 @@ describe('Correctly clearAll', () => {
     clearAllCompleted();
     const list = document.querySelectorAll('.list');
     expect(list).toHaveLength(1);
+  });
+});
+
+describe('Update item status', () => {
+  test('function for updating an item completed status to true', () => {
+    input.value = 'test1';
+    add();
+    completed(0);
+    const check = document.querySelector('.checkbox');
+    expect(check.checked).toEqual(true);
+  });
+  test('function for updating an item completed status to false', () => {
+    completed(0);
+    const check = document.querySelector('.checkbox');
+    expect(check.checked).toEqual(false);
   });
 });
