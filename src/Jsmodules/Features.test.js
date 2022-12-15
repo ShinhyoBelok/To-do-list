@@ -2,7 +2,9 @@
 * @jest-environment jsdom
 */
 
-import { add, remove, editElement, clearAllCompleted, completed } from './Features.js';
+import {
+  add, remove, editElement, clearAllCompleted, completed,
+} from './Features.js';
 
 document.body.innerHTML = `
 <div class="listContainer">
