@@ -2,10 +2,10 @@ import Task from './Task.js';
 import displayList from './displayList.js';/* eslint-disable-line */
 
 let listOfTasks = [];
-export const add = () => {
+export const add = (status) => {
   const input = document.querySelector('input');
   if (input.value === '') return;
-  const newTask = new Task(input.value, listOfTasks);
+  const newTask = new Task(input.value, listOfTasks, status);
   input.value = '';
   listOfTasks.push(newTask);
   displayList(listOfTasks);
@@ -58,4 +58,5 @@ module.exports = {
   add,
   remove,
   editElement,
+  clearAllCompleted,
 };
