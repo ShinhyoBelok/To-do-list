@@ -42,6 +42,10 @@ export const completed = (id) => {
   displayList(listOfTasks);
 };
 
+export const editElement = (eId, eText) => {
+  saveChanges(eId, eText);
+};
+
 window.addEventListener('load', () => {
   if (localStorage.getItem('listOfTasks') === null) return;
   listOfTasks = JSON.parse(localStorage.getItem('listOfTasks'));
@@ -53,4 +57,5 @@ window.addEventListener('load', () => {
 module.exports = {
   add,
   remove,
+  editElement,
 };

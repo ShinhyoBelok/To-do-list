@@ -1,4 +1,4 @@
-import { remove, saveChanges, completed } from './Features.js';/* eslint-disable-line */
+import { remove, saveChanges, completed, editElement } from './Features.js';/* eslint-disable-line */
 
 const updateEvent = () => {
   /* checkbox */
@@ -32,9 +32,7 @@ const updateEvent = () => {
   /* list change event */
   description.forEach((pElement) => {
     pElement.addEventListener('blur', (event) => {
-      const { id } = event.target.parentNode.parentNode;
-      const text = event.target.textContent;
-      saveChanges(id, text);
+      editElement(event.target.parentNode.parentNode, event.target.textContent);
     });
   });
 };

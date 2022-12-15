@@ -1,8 +1,8 @@
 /**
- * @jest-environment jsdom
- */
+* @jest-environment jsdom
+*/
 
-import { add, remove } from './Features.js';
+import { add, remove, editElement } from './Features.js';
 
 document.body.innerHTML = `
 <div class="listContainer">
@@ -55,5 +55,15 @@ describe('remove', () => {
     remove(0);
     const list = document.querySelectorAll('.list');
     expect(list).toHaveLength(0);
+  });
+});
+
+describe('Correctly editing the task description', () => {
+  test('Correctly edited', () => {
+    input.value = 'test1';
+    add();
+    editElement(0, 'edited element');
+    const description = document.querySelector('.description');
+    expect(description.textContent).toEqual('edited element');
   });
 });
