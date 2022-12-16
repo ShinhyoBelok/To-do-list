@@ -1,7 +1,7 @@
 class Task {
-  constructor(description, listOfTask) {
+  constructor(description, listOfTask, status = false) {
     this.description = description;
-    this.completed = false;
+    this.completed = status;
     this.index = listOfTask.length;
   }
 }
